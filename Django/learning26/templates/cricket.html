@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricket</title>
+</head>
+<body>
+    <h1>Team 1 Name : {{team1Name}}</h1>
+    <h2>Captain : {{cap1}}</h2>
+    <h2>Team:</h2>
+    {% for i in 1player %}
+        <h3>{{i}}</h3>
+    {% endfor %}
+
+    <h2>Trophy : {{rcbtrophy}}</h2>
+    {% if rcbtrophy >= 5 %}
+        <h3>Champions</h3>
+    {%else%}
+        <h3>Runner UP</h3>
+    {% endif %}
+
+    <h1>Team 2 Name : {{team2Name}}</h1>
+    <h2>Captain : {{cap2}}</h2>
+    <h2>Team:</h2>
+    {% for i in 2player %}
+        <h3>{{i}}</h3>
+    {% endfor %}
+
+    <h2>Trophy : {{csktrophy}}</h2>
+    {% if csktrophy >= 5 %}
+        <h3>Champions</h3>
+    {%else%}
+        <h3>Runner UP</h3>
+    {% endif %}
+</body>
+</html>
