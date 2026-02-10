@@ -31,6 +31,7 @@ urlpatterns = [
     path("recipe/",views.recipe),
     path("team/",views.cricket),
 
-    path("student/",include("student.urls"))
+    path("student/",include("student.urls")),
+    path("employee/",include("employee.urls"))
 
 ]

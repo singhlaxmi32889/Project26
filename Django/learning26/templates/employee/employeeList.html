@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>EMPLOYEE LIST</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>SALARY</th>
+            <th>JOIN DATE</th>
+            <th>POST</th>
+        </tr>
+        {% for employee in employees %}
+        <tr>
+            <td>{{ employee.id }}</td>
+            <td>{{ employee.name }}</td>
+            <td>{{ employee.age }}</td>
+            <td>{{ employee.salary }}</td>
+            <td>{{ employee.join_date }}</td>
+            <td>{{ employee.post }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>
